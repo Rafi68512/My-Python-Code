@@ -16,10 +16,10 @@ from prettytable import PrettyTable
 
 x = PrettyTable()
 
-x.field_names = (["Nama", "Nim", "Mata Kuliah Favorit"])
+x.field_names = (["Nama", "Mata Kuliah Favorit"])
 
-x.add_row(["Muhammad Rafi", "2130511003", "Sistem Digital" ])
-x.add_row(["Faisal A. F. Munawar", "2130511023", "Algoritma dan Struktur Data"])
+x.add_row(["Muhammad Rafi", "Sistem Digital" ])
+x.add_row(["Faisal A. F. Munawar", "Algoritma dan Struktur Data"])
 
 print(x)
 
@@ -31,10 +31,9 @@ from prettytable import PrettyTable
 
 x = PrettyTable()
 
-column_names = ["Nama", "Nim", "Mata Kuliah Favorit"]
+column_names = ["Nama", "Mata Kuliah Favorit"]
 
 x.add_column(column_names[0], ["Muhammad Rafi", "Faisal A. F. Munawar"])
-x.add_column(column_names[1], ["2130511003", "2130511023",])
-x.add_column(column_names[2], ["Sistem Digital", "Algoritma dan Struktur Data"])
+x.add_column(column_names[1], ["Sistem Digital", "Algoritma dan Struktur Data"])
 
 print(x)
